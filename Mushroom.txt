@@ -3,7 +3,8 @@ library(ggplot2)            #install.packages("ggplot2") if package is not insta
 library(randomForest)       #install.packages("randomForest") if package is not installed
 library(rpart.plot)         #install.packages("rpart.plot") if package is not installed
 library(e1071)              #install.packages("e1071") if package is not installed
-mushrooms <- read.csv("C:/Users/Sneha/Downloads/mushrooms.csv")
+mushrooms <- read.csv("C:/Users/Sneha/Downloads/mushrooms.csv")#Change path to the location where the CSV file is stored
+#https://www.kaggle.com/uciml/mushroom-classification--link to the kaggle dataset
 View(mushrooms)             #To view the data
 summary(mushrooms)          #Summary statistics of the dataset
 for(i in seq(2,23,1)){plot(mushrooms[,i],mushrooms[,1],xlab=colnames(mushrooms)[i],ylab=colnames(mushrooms)[1])}#all composition plots
